@@ -1,0 +1,271 @@
+/* Se quitan los margenes preestablecidos por el navegador */
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* Se usa para definir que 1rem es esquivalente a 10 pixeles de resolución*/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*:before, *:after{
+    box-sizing: inherit;
+
+}
+/* Se usa para insertar fuentes descargadas en la carpeta fonts */
+@font-face{
+    font-family: 'lato-black';
+    src:url(../Fonts/Lato/Lato-Black.ttf);
+    font-family: 'lato-BlackItalic';
+    src:url(../Fonts/Lato/Lato-BlackItalic.ttf);
+   
+
+}
+header{
+    background-color: rgb(24, 23, 24);
+    height: 160px;
+
+}
+/* Se asigna diferentes fuentes, bordes, margenes y estilos al titulo principal */
+
+.padre{
+    margin-top:5rem;
+    margin-bottom:10rem;
+    margin-left:25rem;
+    margin-right:25rem;
+    padding: 3rem;
+    background-color: #b3b4b9; 
+    width: 1000px;
+
+}
+.e1 {
+    padding: 2rem;;
+    display:flex;
+    justify-content: flex-end;
+    background-color: #dbc3e9;      
+    border: 0.3rem solid #848aeb ;
+}
+nav {
+    height: 50px;
+    
+    
+
+}
+nav ul{
+
+    font-size:1.8rem;
+    list-style: none;
+    
+    
+}
+nav ul li {
+    display:inline;
+    padding:0.5rem;
+    color: #2b2c2c;
+    border-style: 0.1rem solid  #212222 ;
+    border-right-color: black;
+}
+.t1{
+    font-size: 2.3rem;
+    font-family: "lato-black";
+    color: rgb(49, 45, 45);
+    margin-right: 11rem;
+      
+    
+}
+.e2 {
+    padding: 2rem;;
+    background-color: #000000; 
+    display:flex;
+    justify-content: space-around;  
+    border: 0.3rem solid #848aeb ;
+}
+
+
+p{
+
+ font-family:"lato-black";
+ font-size:2rem;
+ color: blanchedalmond;
+
+}
+img{
+
+    width: 15rem;
+    height: 18rem;
+
+}
+
+.t2{
+    font-size: 2.5rem;
+    font-family: "lato-black";
+    color: rgb(49, 45, 45);
+    text-align: center;
+    
+}
+.e3{
+    padding: 2rem;;
+    background-color: #dbc3e9;  
+    border: 0.3rem solid #848aeb ;
+
+
+}
+.e4{
+    background-color: #dbc3e9; 
+    display:flex;
+    justify-content: space-around; 
+    
+}
+
+
+
+/* Se usa numeral para asignarle caracteristicas a un ID */
+.e5 {
+
+width: 33%;
+}
+.p1 {
+    font-family:"lato-black";
+    font-size:1.5rem;
+    color: #000000;
+    margin:1rem;
+}
+.e6 li {
+    font-family:"lato-black";
+    font-size:1.5rem;
+    color: #000000;
+    
+
+}
+.e7 li {
+    font-family:"lato-black";
+    font-size:1.5rem;
+    color: #000000;
+
+}
+
+
+h3 {
+
+    font-family:"lato-black";
+    font-size:2rem;
+    color: #000000;
+
+}
+.img1{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+
+
+}
+.enc1{
+    text-align: center;
+    width: 82%;
+    margin-bottom: 1rem;
+
+}
+.img2{
+    width: 23rem;
+    height: 20rem;;
+    margin-bottom: 1rem;
+    
+
+
+
+}
+.e12{
+    background-color: #dbc3e9; 
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+
+    
+}
+.e14{
+   
+    display:inline;
+    justify-content:
+    background-color: #dbc3e9; 
+    border:0.3rem solid #848aeb ;   
+}
+.e15{
+
+    justify-content: center;
+}
+
+.formulario label{
+    /* A todos los lable hagale eso */
+    font-family: "lato-black";
+    text-align:left;
+    font-size: 1.7rem;
+    
+}
+
+
+#Nombre,#Servicio,#Correo,
+#Comment{
+    /* Ocupe el 100% de la pantalla */
+    width: 100%;
+    /* lo minimo que puede llegar la altura es 3rem */
+    min-height:3rem;
+    border:1px solid #ffff;
+    padding:0.3rem;
+    margin-bottom: .5rem;
+    transition: 300ms all;
+
+}
+/* Coloca una pequeña somra */
+#Nombre:focus,
+#Servicio:focus,
+#Correo:focus,
+#Comment:focus
+{
+
+    box-shadow: 0 0 0.5rem rgb(255, 149, 130) ;
+
+}
+.comment{
+  width: 100%;
+  height:  15rem;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 15rem;
+  max-height: 30rem;
+
+
+}
+
+.Enviar{
+    text-justify:center;
+    background:#1111;
+    color:white;
+    padding:1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font: 1.4rem;
+    text-decoration: none;
+    max-width: 12rem;
+    transition: 300ms all;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    background: rgb(7, 112, 153);
+    justify-content: center;
+
+}
+
+footer{
+    background-color:#848aeb ;
+    height: 100px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+.e16{
+
+    text-align: center;
+}
